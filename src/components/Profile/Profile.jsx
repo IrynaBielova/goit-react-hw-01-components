@@ -1,7 +1,7 @@
 /* eslint-disable no-unreachable */
 /* eslint-disable react/jsx-no-undef */
 import PropTypes from 'prop-types';
-import { Box } from '../Box';
+import { Box } from 'components/Box';
 
 export const Profile = ({user: {username, tag, location, avatar, stats:{followers, views, likes}}}) => {
   return
