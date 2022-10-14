@@ -6,7 +6,8 @@ import {ListOfFriend, ListItem, IsOnlineMark, FriendImg, FriendName} from './Fri
 export const FriendList = ({friends}) => {
     return (
         <Box
-        mb="18px"
+        width="30vw" 
+        mx="auto" 
         as="section">
             <ListOfFriend>
                 {friends.map(({id, isOnline, avatar, name}) => (
