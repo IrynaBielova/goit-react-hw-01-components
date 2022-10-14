@@ -5,7 +5,7 @@ padding: ${p => p.theme.space[4]}px;
 text-align: center;
 font-weight:${p => p.theme.fontWeights.bold};
 font-size: ${p => p.theme.fontSizes.l};
-background-color: ${p => p.theme.colors.background};
+background-color: ${p => p.theme.colors.muted};
 box-shadow: 5px 5px 15px 5px #00000063;
 // border-radius: 40px 40px;
 margin-block: 0;
