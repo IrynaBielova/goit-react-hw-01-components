@@ -1,30 +1,29 @@
-/* eslint-disable no-unreachable */
-/* eslint-disable react/jsx-no-undef */
 import PropTypes from 'prop-types';
 import { Box } from 'components/Box';
-
+// import user from '../Data/user.json'
 import {Description, Avatar, Username, Tag, Location, Stats, StatsItem,
 Label, Quantity} from './Profile.styled';
 
+
 export const Profile = ({user: {username, tag, location, avatar, stats:{followers, views, likes}}}) => {
-  return
+  return (
   <Box 
   width="30vw" 
   mx="auto" 
-  bg="white" 
-  borderRadius="4px"
+  bg="blue" 
+  borderRadius="40px"
   boxShadow="rgb(0 0 0 / 20%) 0px 3px 1px -2px,
       rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px"
   mb="16px"
-  as="section">   
-            <><Description>
+  as="section"> 
+  <Description>
     <Avatar
       src={avatar}
       alt="User avatar" />
     <Username>{username}</Username>
     <Tag>{tag}</Tag>
     <Location>{location}</Location>
-  </Description>
+  
   <Stats>
       <StatsItem>
         <Label>Followers</Label>
@@ -38,8 +37,10 @@ export const Profile = ({user: {username, tag, location, avatar, stats:{follower
         <Label>Likes</Label>
         <Quantity>{likes}</Quantity>
       </StatsItem>
-    </Stats></>
+    </Stats>
+    </Description>
     </Box>
+  );
 }
 
 Profile.propTypes = {
